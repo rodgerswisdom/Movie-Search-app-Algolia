@@ -1,0 +1,38 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .movie-card {
+    background-color: #1a1a1a; /* Slightly lighter black */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-card h2 {
+    font-size: 1.5rem;
+    color: #e50914; /* Same red as the heading */
+    margin: 10px;
+  }
+  
+  .movie-card p {
+    font-size: 1rem;
+    margin: 10px;
+    color: #ccc; /* Light gray text for description */
+  }
+  
